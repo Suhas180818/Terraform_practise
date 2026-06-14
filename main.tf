@@ -1,8 +1,8 @@
-resource "aws_instance" "my-instance" {
+resource "aws_instance" "myInstance" {
   ami = "ami-01a00762f46d584a1"
   instance_type = "t3.micro"
   key_name = "tisha_2026"
-  tags {
+  tags = {
     name = "terraform_instance"
   }
  
